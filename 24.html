@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Website</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Common Header for all users -->
+<header>
+    <h1>Travel Agency Website</h1>
+</header>
+
+<!-- User Section -->
+<section id="user-section">
+    <h2>User Section</h2>
+    <!-- User Register Form -->
+    <form id="user-register-form">
+        <!-- Include necessary registration fields -->
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- User Login Form -->
+    <form id="user-login-form">
+        <label for="user-username">Username:</label>
+        <input type="text" id="user-username" name="user-username" required>
+        <label for="user-password">Password:</label>
+        <input type="password" id="user-password" name="user-password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- View Food Details Button -->
+    <a href="https://www.canva.com/p/templates/EAFM2D65MKA-green-modern-food-menu/" id="view-food-details-btn">View Food Details</a>
+
+    <!-- View Hostel Details Button -->
+    <a href="https://www.momondo.in/hotels/amsterdam/Hostelle---women-only-hostel-Amsterdam.mhd448841.ksp" id="view-hostel-details-btn">View Hostel Details</a>
+
+    <!-- View Route Details Button -->
+    <a href="https://www.google.com/maps/search/hostel+routes/@13.0156156,79.9478534,12z/data=!3m1!4b1?hl=en&entry=ttu"id="view-route-details-btn">View Route Details</a>
+
+    <!-- My Book Accommodation Form -->
+    <form id="my-book-accommodation-form">
+        <!-- Include necessary booking fields -->
+        <a href=" " type="submit">Book Accommodation</a>
+    </form>
+</section>
+
+<!-- Admin Section -->
+<section id="admin-section">
+    <h2>Admin Section</h2>
+    <!-- Admin Login Form -->
+    <form id="admin-login-form">
+        <label for="admin-username">Username:</label>
+        <input type="text" id="admin-username" name="admin-username" required>
+        <label for="admin-password">Password:</label>
+        <input type="password" id="admin-password" name="admin-password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Post Tourism Details Form -->
+    <form id="post-tourism-details-form">
+        <!-- Include necessary tourism details fields -->
+        <button type="submit">Post Tourism Details</button>
+    </form>
+
+    <!-- Manage Food Details Form -->
+    <form id="manage-food-details-form">
+        <!-- Include necessary food details fields -->
+        <button type="submit">Manage Food Details</button>
+    </form>
+
+    <!-- Manage Hotel Details Form -->
+    <form id="manage-hotel-details-form">
+        <!-- Include necessary hotel details fields -->
+        <button type="submit">Manage Hotel Details</button>
+    </form>
+
+    <!-- Manage Route Details Form -->
+    <form id="manage-route-details-form">
+        <!-- Include necessary route details fields -->
+        <button type="submit">Manage Route Details</button>
+    </form>
+
+    <!-- View Booking Details Button -->
+    <button id="view-booking-details-btn">View Booking Details</button>
+</section>
+
+<!-- Common Footer for all users -->
+<footer>
+    <p>&copy; 2023 Travel Agency Website</p>
+</footer>
+
+<!-- Add this script in the head section of your HTML -->
+<script>
+    // Function to handle user registration form submission
+    document.getElementById("user-register-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        // Add your logic for user registration here
+        alert("User registration logic goes here");
+    });
+
+    // Function to handle user login form submission
+    document.getElementById("user-login-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        // Add your logic for user login here
+        alert("User login logic goes here");
+    });
+
+    // Function to handle admin login form submission
+    document.getElementById("admin-login-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        // Add your logic for admin login here
+        alert("Admin login logic goes here");
+    });
+
+    // Function to handle post tourism details form submission
+    document.getElementById("post-tourism-details-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        // Add your logic for posting tourism details here
+        alert("Post tourism details logic goes here");
+    });
+
+    // Add similar event listeners for other forms and buttons
+
+</script>
+
+
+</body>
+</html>

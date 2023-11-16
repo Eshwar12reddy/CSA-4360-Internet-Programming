@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Management System</title>
+    <!-- Add your CSS styles here -->
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Common Header for all users -->
+<header>
+    <h1>Garbage Management System</h1>
+</header>
+
+<!-- Admin Section -->
+<section id="admin-section">
+    <h2>Administrator Section</h2>
+    <!-- Admin Login Form -->
+    <form id="admin-login-form">
+        <label for="admin-username">Username:</label>
+        <input type="text" id="admin-username" name="admin-username" required>
+        <label for="admin-password">Password:</label>
+        <input type="password" id="admin-password" name="admin-password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Admin actions go here -->
+</section>
+
+<!-- Public Section -->
+<section id="public-section">
+    <h2>General Public Section</h2>
+    <!-- Public Registration Form -->
+    <form id="public-registration-form">
+        <!-- Include necessary registration fields -->
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Public Login Form -->
+    <form id="public-login-form">
+        <label for="public-username">Username:</label>
+        <input type="text" id="public-username" name="public-username" required>
+        <label for="public-password">Password:</label>
+        <input type="password" id="public-password" name="public-password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Register Complaint Form -->
+    <form id="register-complaint-form">
+        <!-- Include necessary complaint fields -->
+        <button type="submit">Register Complaint</button>
+    </form>
+
+    <!-- View Complaint and Status -->
+    <button id="view-complaint-status-btn">View My Complaint & Status</button>
+</section>
+
+<!-- Driver Section -->
+<section id="driver-section">
+    <h2>Driver Section</h2>
+    <!-- Driver Login Form -->
+    <form id="driver-login-form">
+        <label for="driver-username">Username:</label>
+        <input type="text" id="driver-username" name="driver-username" required>
+        <label for="driver-password">Password:</label>
+        <input type="password" id="driver-password" name="driver-password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Daily Work Updates -->
+    <button id="check-work-updates-btn">Check Daily Work Updates</button>
+
+    <!-- Choose Best Route Form -->
+    <form id="choose-route-form">
+        <!-- Include necessary route selection fields -->
+        <button type="submit">Choose Best Route</button>
+    </form>
+
+    <!-- Update Garbage Load Form -->
+    <form id="update-garbage-load-form">
+        <label for="garbage-load">Garbage Load:</label>
+        <input type="text" id="garbage-load" name="garbage-load" required>
+        <button type="submit">Update Garbage Load</button>
+    </form>
+</section>
+
+
+<!-- Add this script tag in the head or before the closing body tag -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Admin Login Form Submission
+        document.getElementById("admin-login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle admin login
+            alert("Admin login functionality to be implemented.");
+        });
+
+        // Public Registration Form Submission
+        document.getElementById("public-registration-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle public registration
+            alert("Public registration functionality to be implemented.");
+        });
+
+        // Public Login Form Submission
+        document.getElementById("public-login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle public login
+            alert("Public login functionality to be implemented.");
+        });
+
+        // Register Complaint Form Submission
+        document.getElementById("register-complaint-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle complaint registration
+            alert("Complaint registration functionality to be implemented.");
+        });
+
+        // Driver Login Form Submission
+        document.getElementById("driver-login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle driver login
+            alert("Driver login functionality to be implemented.");
+        });
+
+        // Choose Best Route Form Submission
+        document.getElementById("choose-route-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle route selection
+            alert("Route selection functionality to be implemented.");
+        });
+
+        // Update Garbage Load Form Submission
+        document.getElementById("update-garbage-load-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle updating garbage load
+            alert("Update garbage load functionality to be implemented.");
+        });
+
+        // View Complaint and Status Button Click
+        document.getElementById("view-complaint-status-btn").addEventListener("click", function () {
+            // Add logic to handle viewing complaint and status
+            alert("View complaint and status functionality to be implemented.");
+        });
+
+        // Check Work Updates Button Click
+        document.getElementById("check-work-updates-btn").addEventListener("click", function () {
+            // Add logic to handle checking daily work updates
+            alert("Check work updates functionality to be implemented.");
+        });
+    });
+</script>
+
+</body>
+</html>

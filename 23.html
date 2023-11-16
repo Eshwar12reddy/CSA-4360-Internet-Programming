@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Management System</title>
+
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+        
+    </style>
+</head>
+<body>
+
+<!-- Common Header for all users -->
+<header>
+    <h1>Blood Bank Management System</h1>
+</header>
+
+<!-- Donor/User Section -->
+<section id="donor-section">
+    <h2>Donor/User Section</h2>
+    <!-- Donor/User Login Form -->
+    <form id="donor-login-form">
+        <label for="donor-username">Username:</label>
+        <input type="text" id="donor-username" name="donor-username" required>
+        <label for="donor-password">Password:</label>
+        <input type="password" id="donor-password" name="donor-password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Donor/User Registration Form -->
+    <form id="donor-registration-form">
+        <!-- Include necessary registration fields -->
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Post Donor Information Form -->
+    <form id="post-donor-info-form">
+        <!-- Include necessary donor information fields -->
+        <button type="submit">Post Donor Information</button>
+    </form>
+
+    <!-- My Donor Info Button -->
+    <a href=" https://www.indiadonates.org/donate-now?utm_source=Google&utm_medium=CPC&utm_campaign=Brand+Campaign&utm_content=NGO+KWs&gad_source=1&gclid=CjwKCAiA9dGqBhAqEiwAmRpTC6-7X-LoOOm-vEbrt-6AxDvdrACde4XWoXdCOvUEBX0TExPXuLUpaxoCOwkQAvD_BwE" id="my-donor-info-btn">My Donor Info</a>
+
+    <!-- Search Donor Details Form -->
+    <form id="search-donor-details-form">
+        <label for="search-donor">Search Donor:</label>
+        <input type="text" id="search-donor" name="search-donor" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Search Blood Bank Details Form -->
+    <form id="search-blood-bank-details-form">
+        <label for="search-blood-bank">Search Blood Bank:</label>
+        <input type="text" id="search-blood-bank" name="search-blood-bank" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Logout Button -->
+    <button id="logout-btn">Logout</button>
+</section>
+
+<!-- Hospital Section -->
+<section id="hospital-section">
+    <h2>Hospital Section</h2>
+    <!-- Hospital Registration Form -->
+    <form id="hospital-registration-form">
+        <!-- Include necessary hospital registration fields -->
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Hospital Login Form -->
+    <form id="hospital-login-form">
+        <label for="hospital-username">Username:</label>
+        <input type="text" id="hospital-username" name="hospital-username" required>
+        <label for="hospital-password">Password:</label>
+        <input type="password" id="hospital-password" name="hospital-password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Post Blood Bank Information Form -->
+    <form id="post-blood-bank-info-form">
+        <!-- Include necessary blood bank information fields -->
+        <button type="submit">Post Blood Bank Information</button>
+    </form>
+
+    <!-- Update Blood Group Status Form -->
+    <form id="update-blood-group-status-form">
+        <label for="blood-group">Blood Group:</label>
+        <input type="text" id="blood-group" name="blood-group" required>
+        <button type="submit">Update Blood Group Status</button>
+    </form>
+
+    <!-- View Blood Bank Details Button -->
+    <a href=" https://www.redcrossblood.org/local-homepage/news/article/blood-banks-defined.html" id="view-blood-bank-details-btn">View Blood Bank Details</a>
+
+    <!-- Logout Button -->
+    <button id="hospital-logout-btn">Logout</button>
+</section>
+
+
+<!-- Add this script tag in the head or before the closing body tag -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Donor/User Login Form Submission
+        document.getElementById("donor-login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle donor/user login
+            alert("Donor/User login functionality to be implemented.");
+        });
+
+        // Donor/User Registration Form Submission
+        document.getElementById("donor-registration-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle donor/user registration
+            alert("Donor/User registration functionality to be implemented.");
+        });
+
+        // Post Donor Information Form Submission
+        document.getElementById("post-donor-info-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle posting donor information
+            alert("Post donor information functionality to be implemented.");
+        });
+
+        // My Donor Info Button Click
+        document.getElementById("my-donor-info-btn").addEventListener("click", function () {
+            // Add logic to handle viewing donor information
+            alert("View donor information functionality to be implemented.");
+        });
+
+        // Search Donor Details Form Submission
+        document.getElementById("search-donor-details-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle searching donor details
+            alert("Search donor details functionality to be implemented.");
+        });
+
+        // Search Blood Bank Details Form Submission
+        document.getElementById("search-blood-bank-details-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle searching blood bank details
+            alert("Search blood bank details functionality to be implemented.");
+        });
+
+        // Logout Button Click
+        document.getElementById("logout-btn").addEventListener("click", function () {
+            // Add logic to handle logout
+            alert("Logout functionality to be implemented.");
+        });
+
+        // Hospital Registration Form Submission
+        document.getElementById("hospital-registration-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle hospital registration
+            alert("Hospital registration functionality to be implemented.");
+        });
+
+        // Hospital Login Form Submission
+        document.getElementById("hospital-login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle hospital login
+            alert("Hospital login functionality to be implemented.");
+        });
+
+        // Post Blood Bank Information Form Submission
+        document.getElementById("post-blood-bank-info-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle posting blood bank information
+            alert("Post blood bank information functionality to be implemented.");
+        });
+
+        // Update Blood Group Status Form Submission
+        document.getElementById("update-blood-group-status-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // Add logic to handle updating blood group status
+            alert("Update blood group status functionality to be implemented.");
+        });
+
+        // View Blood Bank Details Button Click
+        document.getElementById("view-blood-bank-details-btn").addEventListener("click", function () {
+            // Add logic to handle viewing blood bank details
+            alert("View blood bank details functionality to be implemented.");
+        });
+
+        // Hospital Logout Button Click
+        document.getElementById("hospital-logout-btn").addEventListener("click", function () {
+            // Add logic to handle hospital logout
+            alert("Hospital logout functionality to be implemented.");
+        });
+    });
+</script>
+
+
+</body>
+</html>
